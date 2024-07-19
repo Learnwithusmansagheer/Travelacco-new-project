@@ -98,7 +98,7 @@ body {
 
 }
 
-.dashboard p {
+.dashboard a {
     font-family: lato;
     font-size: 20px;
     font-weight: 400;
@@ -146,8 +146,8 @@ body {
 
     .sideBar {
 
-        width: 240px;
-        height: auto;
+        width: 230px;
+        height: 100%;
         position: fixed;
     }
 
@@ -162,8 +162,8 @@ body {
 
     .sideBar-list {
         width: auto;
-        height: auto;
-        gap: 3px;
+        height: 100%;
+        gap: 15px;
 
     }
 }
@@ -174,7 +174,7 @@ body {
     .sideBar {
 
         width: 150px;
-        height: auto;
+        height: 100%;
         position: fixed;
     }
 
@@ -183,13 +183,13 @@ body {
     }
 
     .head-img {
-        width: 30px;
+        width: 50px;
 
     }
 
     .sideBar-list {
         width: auto;
-        height: auto;
+        height: 100%;
 
 
     }
@@ -221,11 +221,12 @@ body {
 
 
 }
+
 @media screen and (max-width:515px) {
     .sideBar {
         align-items: center;
         width: 70px;
-        height: auto;
+        height: 100%;
         position: fixed;
     }
 
@@ -234,14 +235,14 @@ body {
     }
 
     .head-img {
-        width: 25px;
-        height: 25px;
+        width: 40px;
+        height: 40px;
 
     }
 
     .sideBar-list {
         width: auto;
-        height: auto;
+        height: 100%;
         align-items: center;
 
         padding: 20px 0px 0px 15px;
@@ -276,63 +277,9 @@ body {
 
 }
 
-@media screen and (max-width:460px) {
 
 
-    .sideBar {
-        align-items: center;
-        width: 80px;
-        height: auto;
-        position: fixed;
-    }
-
-    .sideBar-head h1 {
-        display: none;
-    }
-
-    .head-img {
-        width: 30px;
-        height: 20px;
-
-    }
-
-    .sideBar-list {
-        width: auto;
-        height: 500px;
-        align-items: center;
-
-        padding: 10px 0px 0px px;
-
-    }
-
-    .dashboard {
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-
-
-    }
-
-    .dashboard p {
-        display: none;
-    }
-
-    .side-footer {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    .footer-text {
-        display: none;
-    }
-
-    .upload {
-        display: none;
-    }
-}
-
-@media screen and (max-width:390px) {
+/* @media screen and (max-width:390px) {
 
 
     .sideBar {
@@ -386,25 +333,18 @@ body {
     .upload {
         display: none;
     }
-}
-
-
-/* here we setting dashboard set */
-.dashboard-set {
-    width: 81%;
-    margin-left: 228px;
-
-}
+} */
 
 .navbar {
-    /* width: 100%; */
-    width: 1290px;
+    width: 85%;
+
     height: 8vh;
     padding: 0px 32px 0px 32px;
-    background: rgba(255, 255, 255, 1);
+    background: rgb(251, 249, 249);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 225px;
 
 }
 
@@ -417,72 +357,73 @@ body {
 }
 
 @media screen and (max-width:920px) {
-    .dashboard-set {
+    .navbar {
+        width: 100%;
+        height: auto;
+        padding: 0 15px 0 15px;
         margin-left: 150px;
-
     }
+}
 
+@media screen and (max-width:520px) {
     .navbar {
         width: 100%;
         height: auto;
-        padding: 0 10px 0 8px;
+        padding: 0 15px 0 15px;
+        margin-left: 60px;
     }
 }
 
-@media screen and (max-width:780px) {
-    .dashboard-set {
-        margin-left: 150px;
-
-    }
-
+@media screen and (max-width:390px) {
     .navbar {
         width: 100%;
         height: auto;
-        padding: 0 5px 0 5px;
-    }
+        padding: 0 15px 0 15px;
+        margin-left: 65px;
 
+    }
 }
 
-@media screen and (max-width:515px) {
-    .dashboard-set {
-        margin-left: 70px;
-
-    }
-
-    .navbar {
-        width: auto;
-        height: auto;
-        padding: 0 0px 0 0px;
-
-        justify-content: right;
-    }
-
-    .navbar h1 {
-        display: none;
-    }
-
-}
-
-
-@media screen and (max-width:460px) {
-    .dashboard-set {
-        margin-left: 10px;
-
-    }
-
+@media screen and (max-width:360px) {
     .navbar {
         width: 100%;
         height: auto;
-        padding: 0 0px 0 0px;
+        padding: 0 15px 0 15px;
+        margin-left: 65px;
 
-        justify-content: right;
     }
+}
 
-    .navbar h1 {
-        display: none;
+/* here we setting dashboard set */
+.dashboard-set {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 15px;
+    margin-left: 250px;
+}
+
+@media screen and (max-width:980px) {
+    .dashboard-set {
+        margin-left: 220px;
     }
 
 }
+
+@media screen and (max-width:508px) {
+    .dashboard-set {
+        margin-left: 100px;
+    }
+
+}
+
+@media screen and (max-width:360px) {
+    .dashboard-set {
+        margin-left:20px;
+    }
+
+}
+
+
 
 .navbar h1 {
     font-family: lato;
@@ -494,26 +435,26 @@ body {
 }
 
 .container {
-    width: 100%;
+
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 16px;
-    margin-top: 13px;
-    margin-left: 20px;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    align-content: center;
+
+
 }
 
 
 .overView {
-    width: 654px;
-    height: 330.24px;
+
+    height: auto;
     padding: 12px 16px 12px 16px;
     gap: 24px;
     border-radius: 20px 12px 12px 12px;
     opacity: 0px;
     background-color: #ffffff;
-    margin-top: 15px;
-    margin-left: 20px;
+
+
 }
 
 .over-head {
@@ -557,12 +498,13 @@ body {
 .card {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
     margin-top: 28px;
-    flex-wrap: wrap;
+
 }
 
 .sales {
-    width: 143.5px;
+
     height: 251.04px;
     gap: 32px;
     border-radius: 12px;
@@ -613,7 +555,7 @@ body {
 }
 
 .revenue {
-    width: 143.5px;
+
     height: 251.04px;
     gap: 32px;
     border-radius: 12px;
@@ -627,7 +569,7 @@ body {
 }
 
 .clients {
-    width: 143.5px;
+
     height: 251.04px;
     gap: 32px;
     border-radius: 12px;
@@ -641,7 +583,7 @@ body {
 }
 
 .active {
-    width: 143.5px;
+
     height: 251.04px;
     gap: 32px;
     border-radius: 12px;
@@ -739,197 +681,98 @@ body {
 }
 
 
-.row1{
+.row1 {
     width: 100%;
     align-items: center;
     justify-content: space-between;
     display: flex;
- 
-   
-  
+
+
+
 }
-.row1 td{
-   
+
+.row1 td {
+
     gap: px;
     width: 120px;
-  
+
 }
-.row1 th{
-   color: 
-   rgba(117, 117, 117, 1);
+
+.row1 th {
+    color:
+        rgba(117, 117, 117, 1);
     width: 120px;
 }
-.tbody{
+
+.tbody {
     display: flex;
     flex-direction: column;
     gap: 10px;
     flex-wrap: wrap;
     font-family: lato;
 }
+
+.calender {
+    width: 100%;
+    /* background-color: #4348E1; */
+}
+
 @media screen and (max-width:1024px) {
     .container {
         grid-template-columns: auto;
-        align-items: center;
     }
 
     .overView {
-        width: auto;
+
         height: auto;
     }
 
     .schedular {
-        width: auto;
-        margin-left: 23px;
+
+        height: auto;
     }
 
     .card {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
     }
+
 }
 
 @media screen and (max-width:680px) {
 
     .container {
-        margin-left: -1px;
+
         grid-template-columns: auto;
-
-
-    }
-
-    .overView {
-        width: auto;
-        height: auto;
-    }
-
-    .schedular {
-        width: auto;
-
     }
 
     .card {
         grid-template-columns: auto auto;
-    }
-
-    .table {
-        flex-wrap: wrap;
-        width: auto;
-    }
-
-    table tr td {
-        width: auto;
-        height: auto;
+        row-gap: 15px;
+        column-gap: 1px;
         align-items: center;
-        justify-content: space-between;
-        /* display: flex;
-        justify-content: center;
-        align-self: center; */
-
+        width: auto;
     }
 }
 
 @media screen and (max-width:570px) {
 
     .container {
-        margin-left: -1px;
+
         grid-template-columns: auto;
-
-
-    }
-
-    .overView {
-        width: auto;
-        height: auto;
     }
 
     .schedular {
         width: auto;
         height: auto;
-
-
     }
 
     .card {
         grid-template-columns: auto;
-        gap: 5px;
-    }
-
-    .sales,
-    .active,
-    .revenue,
-    .clients {
-        width: auto;
-
-    }
-
-    .table {
-        flex-wrap: wrap;
-        width: 70%;
-    }
-
-    table tr td {
-        width: auto;
-        height: auto;
-        align-items: center;
-        justify-content: space-between;
-        /* display: flex;
-        justify-content: center;
-        align-self: center; */
-
-    }
-}
-
-@media screen and (max-width:515px) {
-
-    .container {
-
-        grid-template-columns: auto;
-
-
-    }
-
-    .overView {
-        width: auto;
-        height: auto;
-    }
-
-    .schedular {
-        width: auto;
-        height: auto;
-
-    }
-
-    .card {
-        grid-template-columns: auto;
-
-        gap: 5px;
-    }
-
-    .sales,
-    .active,
-    .revenue,
-    .clients {
-        width: auto;
-    }
-
-    .table {
-        flex-wrap: wrap;
-        width: 70%;
-    }
-
-    table tr td {
-        width: auto;
-        height: auto;
-        align-items: center;
-
-        /* display: flex;
-        justify-content: center;
-        align-self: center; */
-
     }
 }
 
 @media screen and (max-width:438px) {
-
     .container {
 
         grid-template-columns: auto;
@@ -937,14 +780,48 @@ body {
 
     }
 
-    .overView {
-        width: 80%;
-        height: auto;
-    }
+    
 
     .schedular {
-        width: 80%;
-        height: auto;
+
+        overflow: auto;
+
+
+    }
+
+    .card {
+        grid-template-columns: auto;
+        gap: 5px;
+    }
+
+    .sales,
+    .active,
+    .revenue,
+    .clients {
+        width: auto;
+    }
+
+
+}
+
+@media screen and (max-width:360px) {
+
+    .container {
+
+        grid-template-columns: auto;
+        align-items: center;
+        margin-left: 60px;
+     
+
+    }
+.overView{
+    width: 70%;
+}
+    
+
+    .schedular {
+width: 70%;
+        overflow: auto;
 
     }
 
@@ -960,114 +837,33 @@ body {
     .clients {
         width: auto;
     }
-
-    .table {
-
-        width: auto;
-    }
-
-    .first-row {
-        width: auto;
-        gap: 5px;
-    }
-
-    .table .first-row,
-    .sec-row {
-        width: auto;
-
-    }
-
-    table tr td {
-        flex-wrap: wrap;
-        width: auto;
-        height: auto;
-        font-size: 8px;
-    }
 }
 
-@media screen and (max-width:370px) {
-
-    .container {
-
-        grid-template-columns: auto;
-        align-items: center;
-
-    }
-
-    .overView {
-        width: 70%;
-        height: auto;
-    }
-
-    .schedular {
-        width: 70%;
-        height: auto;
-
-    }
-
-    .card {
-        grid-template-columns: auto;
-
-        gap: 5px;
-    }
-
-    .sales,
-    .active,
-    .revenue,
-    .clients {
-        width: auto;
-    }
-
-    .table {
-
-        width: auto;
-    }
-
-    .first-row {
-        width: auto;
-        gap: 4px;
-    }
-
-    .table .first-row,
-    .sec-row {
-        gap: 10px;
-        width: auto;
 
 
-    }
 
-    table tr td {
-        flex-wrap: wrap;
-        width: auto;
-        height: auto;
-        font-size: 8px;
-    }
-}
 
 /* here we setting the container1 */
 .container1 {
     display: grid;
-    grid-template-columns: auto auto;
-    width: auto;
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
     margin-top: 15px;
-    margin-left: 15px;
     height: auto;
 
 }
 
 .group {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 4;
+    height: 85%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:10px;
 }
 
 .booking {
-    width: 786px;
-    height: auto;
-    padding: 12px 16px 12px 16px;
+
+    height: 250px;
+    padding: 12px 25px 5px 16px;
     gap: 15px;
     border-radius: 12px;
     opacity: 0px;
@@ -1173,14 +969,15 @@ body {
     font-size: 50px;
     margin-top: -35px;
 }
+
 /* jj;l; */
 
 
 .Expenditure {
-    width: 786px;
-    height: auto;
-    padding: 12px 16px 12px 16px;
-    gap: 24px;
+
+
+    padding: 12px 16px 2px 16px;
+
     border-radius: 12px;
     opacity: 0px;
     background-color: #ffffff;
@@ -1192,7 +989,7 @@ body {
 .earning-head {
     padding: 0px 15px 0 0;
 
-    width: 770px;
+
     display: flex;
     justify-content: space-between;
     font-family: lato;
@@ -1260,7 +1057,7 @@ body {
 }
 
 .x-text {
-    width: 100%;
+
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -1270,54 +1067,18 @@ body {
 
 
 
-#pass {
-    width: 100%;
-}
 
-#code {
-    width: 100%;
-}
 
 @media screen and (max-width:1024px) {
+
     .container1 {
         grid-template-columns: auto;
     }
-
-    .booking {
-
-        width: 100%;
-    }
-
-    .dhk {
-        width: 100%;
-
-    }
-
-
-    .dhk td {
-        width: 60%;
-    }
-
-    .Expenditure {
-        width: 715px;
-    }
-
-    .earning-head {
-        width: 100%;
-    }
-
-    .graphics {
-        width: 100%;
-
-    }
-
-    .graphics img {
-        width: 100%;
-    }
-
-    .graphics p {
-        width: auto;
+    .group{
         height: auto;
+    }
+    .Expenditure {
+        overflow: auto;
     }
 }
 
@@ -1325,41 +1086,7 @@ body {
     .container1 {
         grid-template-columns: auto;
     }
-
-    .booking {
-
-        width: 680px;
-    }
-
-    .dhk {
-        width: 100%;
-
-    }
-
-
-    .dhk td {
-        width: 60%;
-    }
-
-    .Expenditure {
-        width: 680px;
-    }
-
-    .earning-head {
-        width: 100%;
-    }
-
-    .graphics {
-        width: 100%;
-
-    }
-
-    .graphics img {
-        width: 100%;
-    }
-
-    .graphics p {
-        width: auto;
+    .group{
         height: auto;
     }
 }
@@ -1367,196 +1094,46 @@ body {
 @media screen and (max-width:960px) {
     .container1 {
         grid-template-columns: auto;
+        gap: 16px;
     }
-
-    .booking {
-
-        width: 660px;
-    }
-
-    .dhk {
-        width: 100%;
-
-    }
-
-
-    .dhk td {
-        width: 60%;
+    .group{
+        height: auto;
     }
 
     .Expenditure {
-        width: 660px;
+        overflow-x: auto;
     }
-
-    .earning-head {
-        width: 100%;
-    }
-
-    .graphics {
-        width: 100%;
-
-    }
-
-    .graphics img {
-        width: 100%;
-    }
-
-    .graphics p {
-        width: auto;
+    .group{
         height: auto;
     }
+
+   
+
+
+
 }
 
-@media screen and (max-width:940px) {
-    .container1 {
-        grid-template-columns: auto;
-    }
-
-    .booking {
-
-        width: 680px;
-    }
-
-    .dhk {
-        width: 100%;
-
-    }
-
-
-    .dhk td {
-        width: 60%;
-    }
-
-    .Expenditure {
-        width: 680px;
-    }
-
-    .earning-head {
-        width: 100%;
-    }
-
-    .graphics {
-        width: 100%;
-
-    }
-
-    .graphics img {
-        width: 100%;
-    }
-
-    .graphics p {
-        width: auto;
-        height: auto;
-    }
-}
 
 @media screen and (max-width:895px) {
     .container1 {
         grid-template-columns: auto;
+       
     }
 
-    .booking {
-
-        width: 650px;
-    }
-
-    .dhk {
-        width: 100%;
-
-    }
-
-
-    .dhk td {
-        width: 60%;
-    }
 
     .Expenditure {
-        width: 650px;
-    }
-
-    .earning-head {
-        width: 100%;
-    }
-
-    .graphics {
-        width: 100%;
-
-    }
-
-    .graphics img {
-        width: 100%;
-    }
-
-    .graphics p {
-        width: 100%;
-        height: 100%;
-    }
-
-    .line-y p {
-        gap: 2px;
-    }
-
-    .line-x {
-        margin-top: 20px;
-    }
-
-    .x-text {
-        gap: 30px;
+        overflow: auto;
     }
 }
 
 @media screen and (max-width:860px) {
     .container1 {
         grid-template-columns: auto;
-    }
-
-    .booking {
-
-        width: 610px;
-    }
-
-    .dhk {
-        width: 100%;
-
-    }
-
-
-    .dhk td {
-        width: 60%;
+       
     }
 
     .Expenditure {
-        width: 610px;
-    }
-
-    .earning-head {
-        width: 100%;
-    }
-
-    .graphics {
-        width: 100%;
-
-    }
-
-    .graphics img {
-        width: 100%;
-    }
-
-    .graphics p {
-        width: 100%;
-        height: 100%;
-    }
-
-    .line-y p {
-        gap: 2px;
-    }
-
-    .line-x {
-        margin-top: 20px;
-    }
-
-    .x-text {
-        gap: 30px;
+        overflow: auto;
     }
 }
 
@@ -1564,55 +1141,15 @@ body {
     .container1 {
         grid-template-columns: auto;
     }
-
-    .booking {
-
-        width: 580px;
-    }
-
-    .dhk {
-        width: 100%;
-
-    }
-
-
-    .dhk td {
-        width: 60%;
+    .booking{
+        overflow: auto;
     }
 
     .Expenditure {
-        width: 580px;
+        overflow: auto;
     }
 
-    .earning-head {
-        width: 100%;
-    }
 
-    .graphics {
-        width: 100%;
-
-    }
-
-    .graphics img {
-        width: 100%;
-    }
-
-    .graphics p {
-        width: 100%;
-        height: 100%;
-    }
-
-    .line-y p {
-        gap: 2px;
-    }
-
-    .line-x {
-        margin-top: 20px;
-    }
-
-    .x-text {
-        gap: 30px;
-    }
 }
 
 @media screen and (max-width:790px) {
@@ -1622,52 +1159,18 @@ body {
 
     .booking {
 
-        width: 570px;
+      overflow: auto;
     }
 
-    .dhk {
-        width: 100%;
-
-    }
-
-
-    .dhk td {
-        width: 60%;
-    }
+   
 
     .Expenditure {
-        width: 570px;
+      overflow: auto;
     }
 
-    .earning-head {
-        width: 100%;
-    }
+  
 
-    .graphics {
-        width: 100%;
-
-    }
-
-    .graphics img {
-        width: 100%;
-    }
-
-    .graphics p {
-        width: 100%;
-        height: 100%;
-    }
-
-    .line-y p {
-        gap: 2px;
-    }
-
-    .line-x {
-        margin-top: 20px;
-    }
-
-    .x-text {
-        gap: 30px;
-    }
+    
 }
 
 @media screen and (max-width:770px) {
@@ -1677,31 +1180,17 @@ body {
 
     .booking {
 
-        width: 540px;
+       overflow: auto;
     }
-
-    .dhk {
-        width: 100%;
-
-    }
-
-
-    .dhk td {
-        width: 60%;
-    }
+    
 
     .Expenditure {
-        width: 540px;
+       overflow: auto;
     }
 
-    .earning-head {
-        width: 100%;
-    }
+   
 
-    .graphics {
-        width: 100%;
-
-    }
+    
 
     .graphics img {
         width: 100%;
@@ -1732,53 +1221,14 @@ body {
 
     .booking {
 
-        width: 510px;
-        font-size: 10px;
+      overflow: auto;
     }
 
-    .dhk {
-        width: 100%;
-
-    }
-
-
-    .dhk td {
-        width: 60%;
-    }
 
     .Expenditure {
-        width: 510px;
+        overflow: auto;
     }
 
-    .earning-head {
-        width: 100%;
-    }
-
-    .graphics {
-        width: 100%;
-
-    }
-
-    .graphics img {
-        width: 100%;
-    }
-
-    .graphics p {
-        width: 100%;
-        height: 100%;
-    }
-
-    .line-y {
-        gap: 2px;
-    }
-
-    .line-x {
-        margin-top: 40px;
-    }
-
-    .x-text p {
-        gap: 30px;
-    }
 }
 
 @media screen and (max-width:730px) {
@@ -1787,66 +1237,13 @@ body {
     }
 
     .booking {
-
-        width: 480px;
-        font-size: 10px;
+overflow: auto;
     }
-
-    .dhk {
-        width: 100%;
-
-    }
-
-    #pass {
-        display: none;
-    }
-
-    #code {
-        display: none;
-    }
-
-    .dhk td {
-        width: 60%;
-    }
-
     .Expenditure {
-        width: 480px;
+       overflow: auto;
     }
 
-    .clock-img p {
-        display: none;
-    }
-
-    .earning-head {
-        width: 100%;
-    }
-
-    .graphics {
-        width: 100%;
-
-    }
-
-    .graphics img {
-        width: 100%;
-    }
-
-    .graphics p {
-        width: 100%;
-        height: 100%;
-    }
-
-    .line-y {
-        gap: 2px;
-    }
-
-    .line-x {
-        margin-top: 40px;
-    }
-
-    .x-text p {
-        gap: 30px;
-    }
-}
+   }
 
 @media screen and (max-width:680px) {
     .container1 {
@@ -1855,66 +1252,12 @@ body {
 
     .booking {
 
-        width: 450px;
-        font-size: 10px;
-    }
-
-    .dhk {
-        width: 100%;
-
-    }
-
-    #pass {
-        display: none;
-    }
-
-    #code {
-        display: none;
-    }
-
-    .dhk td {
-        width: 60%;
+       overflow: auto;
     }
 
     .Expenditure {
-        width: 450px;
+        overflow: auto;
     }
-
-    .clock-img p {
-        display: none;
-    }
-
-    .earning-head {
-        width: 100%;
-    }
-
-    .graphics {
-        width: 100%;
-
-    }
-
-    .graphics img {
-        width: 100%;
-    }
-
-    .graphics p {
-        width: 90%;
-        height: 100%;
-    }
-
-    .line-y {
-        gap: 2px;
-    }
-
-    .line-x {
-        margin-top: 40px;
-    }
-
-    .x-text {
-        width: 50%;
-    }
-
-
 }
 
 @media screen and (max-width:660px) {
@@ -1924,67 +1267,13 @@ body {
 
     .booking {
 
-        width: 430px;
-        font-size: 10px;
+       overflow: auto;
     }
 
-    .dhk {
-        width: 100%;
-        gap: 20px;
-
-    }
-
-    #pass {
-        display: none;
-    }
-
-    #code {
-        display: none;
-    }
-
-    .dhk td {
-        width: 60%;
-        justify-content: space-between;
-    }
-
+    
     .Expenditure {
-        width: 430px;
+      overflow: auto;
     }
-
-    .clock-img p {
-        display: none;
-    }
-
-    .earning-head {
-        width: 100%;
-    }
-
-    .graphics {
-        width: 100%;
-
-    }
-
-    .graphics img {
-        width: 100%;
-    }
-
-    .graphics p {
-        width: 90%;
-        height: 100%;
-    }
-
-    .line-y {
-        gap: 2px;
-    }
-
-    .line-x {
-        margin-top: 80px;
-    }
-
-    .x-text {
-        width: 50%;
-    }
-
 
 }
 
@@ -1994,73 +1283,36 @@ body {
     }
 
     .booking {
-        display: none;
-        width: auto;
-        font-size: 10px;
+       overflow: auto;
     }
 
-    .table1 {
-       
-    }
-
-    .dhk {
-        width: 100%;
-        gap: 20px;
-
-    }
-
-    #pass {
-        display: none;
-    }
-
-    #code {
-        display: none;
-    }
-
-    .dhk td {
-        width: 60%;
-        justify-content: space-between;
-    }
 
     .Expenditure {
-        display: none;
+       overflow: auto;
     }
-
-    .clock-img p {
-        display: none;
-    }
-
-    .earning-head {
-        width: 100%;
-    }
-
-    .graphics {
-        width: 100%;
-
-    }
-
-    .graphics img {
-        width: 100%;
-    }
-
-    .graphics p {
-        width: 90%;
-        height: 100%;
-    }
-
-    .line-y {
+    .line-y{
         gap: 2px;
     }
-
-    .line-x {
-        margin-top: 80px;
+}
+@media screen and (max-width:360px) {
+    .container1 {
+        grid-template-columns: auto;
+        margin-left: 60px;
     }
 
-    .x-text {
-        width: 50%;
+    .booking {
+        width: 70%;
+       overflow: auto;
     }
 
 
+    .Expenditure {
+        width: 70%;
+       overflow: auto;
+    }
+    .line-y{
+        gap: 2px;
+    }
 }
 
 
@@ -2073,18 +1325,18 @@ body {
 /* dfgsdfsdf */
 .group1 {
 
-    width: 30%;
-    height: 665px;
+  
+    height: 85%;
     gap: 15px;
     opacity: 0px;
-    display: flex;
-    flex-direction: column;
+   display: grid;
+   grid-template-columns: auto;
 }
 
 .expences {
     width: 365px;
-    height: 55%;
-    padding: 0px 16px 12px 16px;
+  height: 300px;
+    padding: 25px 16px 12px 16px;
     gap: 24px;
     border-radius: 12px;
     opacity: 0px;
@@ -2133,7 +1385,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 0px 15px 0;
+    padding: 5px 0px 5px 0;
 }
 
 .contect {
@@ -2202,7 +1454,7 @@ body {
 
 .earning-card {
     width: 365px;
-    height: 30%;
+    height: 215px;
     padding: 12px 16px 12px 16px;
     gap: 24px;
     border-radius: 12px;
@@ -2266,100 +1518,80 @@ body {
 }
 
 @media screen and (max-width:1024px) {
-    .group1 {
+    .container1 {
         flex-direction: column;
-        justify-content: center;
-        margin-left: 150px;
+    }
+
+    .group1 {
+        height: auto;
+        
+    }
+}
+@media screen and (max-width:860px) {
+    
+
+    .group1 {
+        grid-template-columns: repeat(2,1fr);
+        height: auto;
+        
+    }
+}
+@media screen and (max-width:800px) {
+    .group1 {
+        grid-template-columns: auto;
+        width: auto;
+      height: auto;
     }
 }
 
+
 @media screen and (max-width:777px) {
     .group1 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        grid-template-columns: auto;
+        width: auto;
+      height: auto;
     }
 }
 
 @media screen and (max-width:616px) {
     .group1 {
-        flex-direction: column;
+       
         width: auto;
-        margin-left: -40px;
+       
     }
 
-    .expences {
-        width: 70%;
-    }
-
-    .earning-card {
-        width: 70%;
-    }
+   
 }
 
 @media screen and (max-width:444px) {
     .group1 {
-        flex-direction: column;
+       grid-template-columns: auto;
         width: auto;
 
-    }
-
-    .expences {
-        width: 70%;
-    }
-
-    .earning-card {
-        width: 70%;
-    }
-
-    .contect {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .expence-img {
-        width: 100%;
-    }
-
-    .earn-info {
-        width: auto;
     }
 }
 
 @media screen and (max-width:380px) {
     .group1 {
-        flex-direction: column;
+        grid-template-columns: auto;
         width: auto;
-        margin-left: -50px;
     }
 
     .expences {
-        width: 50%;
+      width: auto;
     }
-
-    .earning-card {
-        width: 50%;
-    }
-
-    .contect {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .expence-img {
-        width: 100%;
-    }
-
-    .expence-img img {
+}
+@media screen and (max-width:360px) {
+    .group1 {
+        grid-template-columns: auto;
         width: auto;
+        margin-left: 10px;
     }
 
-    .earn-info {
-        width: 100%;
-
+    .expences {
+      width: 70%;
     }
-
-    .earn-info p {
-        font-size: 10px;
+    .earning-card{
+        width: 70%;
     }
 }
