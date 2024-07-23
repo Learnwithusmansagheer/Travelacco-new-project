@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="customer.css">
-    <title>Customer</title>
+    <link rel="stylesheet" href="bank.css">
+    <title>Bank</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                     <div class="dashboard" style="background: rgba(96, 91, 255, 1);">
                         <img src="images/dashboard.png" alt="">
                         <a style="color: #ffffff;" href="./dashboard.html">Dashboard</a>
-                        <p ></p>
+                        <p></p>
                     </div>
                     <div class="dashboard">
                         <img src="images/customer.png" alt="">
@@ -32,19 +32,19 @@
                     </div>
                     <div class="dashboard">
                         <img src="images/booking.png" alt="">
-                        <a href="./booking-filter.html">Bookings</a>
+                        <a href="#">Bookings</a>
                     </div>
                     <div class="dashboard">
                         <img src="images/transcition.png" alt="">
-                        <a href="./transaction.html">Transaction</a>
+                        <a href="#">Transaction</a>
                     </div>
                     <div class="dashboard">
                         <img src="images/airlines.png" alt="">
-                    <a href="./airlines.html">Airlines</a>
+                        <a href="#">Airlines</a>
                     </div>
                     <div class="dashboard">
                         <img src="images/banks.png" alt="">
-                        <a href="#">Banks</a>
+                        <a href="./bank-filter.html">Banks</a>
                     </div>
                     <div class="dashboard">
                         <img src="images/vendor.png" alt="">
@@ -62,9 +62,19 @@
                         <img src="images/packages.png" alt="">
                         <a href="./package.html">Packages</a>
                     </div>
-                    <div class="dashboard">
-                        <img src="images/setting.png" alt="">
-                        <a href="#">Settings</a>
+                    <div style="display: flex;" class="dashboard" id="dashboard">
+                        <div style="display: flex;align-items: center;gap: 5px;" class="dashboard_set">
+                            <img src="images/setting.png" alt="">
+                            <a href="#">Settings</a>
+                        </div>
+                        <select style="border: none;" name="" id="">
+                            <option value="1">222</option>
+                            <option value="1">222</option>
+                            <option value="1">222</option>
+                            <option value="1">222</option>
+                            <option value="1">222</option>
+                        </select>
+
                     </div>
 
                 </div>
@@ -81,13 +91,12 @@
                     </div>
                 </div>
     </section>
-
-
     <section>
         <div class="navbar">
-            <h1>Customer</h1>
+            <h1>Bank</h1>
             <img src="images/billicon.png" alt="">
         </div>
+        
         <div class="packageSetting">
             <div class="container">
                 <div class="selectButton">
@@ -102,29 +111,24 @@
                             alt=""><span>Filter</span> </button>
                 </div>
                 <div class="addPackage">
-                    <button style="display: flex; align-items: center;">+ <span> Add Package</span></button>
+                    <button style="display: flex; align-items: center;">+ <span> <a href="./add-bank.html">Add Bank</a></span></button>
                 </div>
             </div>
             <div class="container1">
                 <table class="table">
                     <tr class="first_row">
-                        <th>NAME</th>
-                        <th>PASSWORD NO.</th>
-                        <th>CUSTOMER TYPES</th>
-                        <th>PHONE NO</th>
-                        <th>ADDRESS</th>
-                        <th>BALANECE</th>
+                        <th>BANK NAME</th>
+                        <th>ACCOUNT NO.</th>
+                        <th>BALANCE</th>
+                       
                         <th>CREATED AT</th>
                         <th>ACTION</th>
                     </tr>
                     <tr class="second_row">
                         <td style="display: flex;align-items: center;gap: 8px;"><input
                                 style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
-                                type="checkbox" name="" id=""><span>Naveed</span></td>
+                                type="checkbox" name="" id=""><span>Cooper</span></td>
                         <td>6221376671</td>
-                        <td>Travel Agent </td>
-                        <td>03001234567</td>
-                        <td>Faisalabad</td>
                         <td style="color: rgba(211, 47, 47, 1);">-RS 50,000</td>
                         <td>Apr 26, 2024 </td>
                         <td id="set">
@@ -133,15 +137,16 @@
                             <div class="delete"><img src="images/delete.png" alt=""></div>
 
                         </td>
+                      
+                      
+                       
                     </tr>
                     <tr class="second_row">
                         <td style="display: flex;align-items: center;gap: 8px;"><input
                                 style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
-                                type="checkbox" name="" id=""><span>Naveed</span></td>
+                                type="checkbox" name="" id=""><span>Cooper</span></td>
                         <td>6221376671</td>
-                        <td>Travel Agent </td>
-                        <td>03001234567</td>
-                        <td>Faisalabad</td>
+                        
                         <td  style="color: rgba(44, 211, 72, 1);">-RS 50,000</td>
                         <td>Apr 26, 2024 </td>
                         <td id="set">
@@ -154,11 +159,88 @@
                     <tr class="second_row" id="row-third">
                         <td style="display: flex;align-items: center;gap: 8px;"><input
                                 style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
-                                type="checkbox" name="" id=""><span>Naveed</span></td>
+                                type="checkbox" name="" id=""><span>Copper</span></td>
                         <td>6221376671</td>
-                        <td>Travel Agent </td>
-                        <td>03001234567</td>
-                        <td>Faisalabad</td>
+                      
+                        <td style="color: rgba(44, 211, 72, 1);">-RS 50,000</td>
+                        <td>Apr 26, 2024 </td>
+                        <td id="set">
+                            <div class="view"><img src="images/view.png" alt=""></div>
+                            <div class="edit"><img src="images/edit.png" alt=""></div>
+                            <div class="delete"><img src="images/delete.png" alt=""></div>
+
+                        </td>
+                    </tr>
+                    <tr class="second_row">
+                        <td style="display: flex;align-items: center;gap: 8px;"><input
+                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
+                                type="checkbox" name="" id=""><span>Cooper</span></td>
+                        <td>6221376671</td>
+                        <td style="color: rgba(211, 47, 47, 1);">-RS 50,000</td>
+                        <td>Apr 26, 2024 </td>
+                        <td id="set">
+                            <div class="view"><img src="images/view.png" alt=""></div>
+                            <div class="edit"><img src="images/edit.png" alt=""></div>
+                            <div class="delete"><img src="images/delete.png" alt=""></div>
+
+                        </td>
+                      
+                      
+                       
+                    </tr>
+                    <tr class="second_row" id="row-third">
+                        <td style="display: flex;align-items: center;gap: 8px;"><input
+                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
+                                type="checkbox" name="" id=""><span>Copper</span></td>
+                        <td>6221376671</td>
+                        
+                        <td style="color: rgba(44, 211, 72, 1);">-RS 50,000</td>
+                        <td>Apr 26, 2024 </td>
+                        <td id="set">
+                            <div class="view"><img src="images/view.png" alt=""></div>
+                            <div class="edit"><img src="images/edit.png" alt=""></div>
+                            <div class="delete"><img src="images/delete.png" alt=""></div>
+
+                        </td>
+                    </tr>
+                    <tr class="second_row" id="row-third">
+                        <td style="display: flex;align-items: center;gap: 8px;"><input
+                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
+                                type="checkbox" name="" id=""><span>Copper</span></td>
+                        <td>6221376671</td>
+                      
+                        <td style="color: rgba(44, 211, 72, 1);">-RS 50,000</td>
+                        <td>Apr 26, 2024 </td>
+                        <td id="set">
+                            <div class="view"><img src="images/view.png" alt=""></div>
+                            <div class="edit"><img src="images/edit.png" alt=""></div>
+                            <div class="delete"><img src="images/delete.png" alt=""></div>
+
+                        </td>
+                    </tr>
+                    <tr class="second_row">
+                        <td style="display: flex;align-items: center;gap: 8px;"><input
+                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
+                                type="checkbox" name="" id=""><span>Cooper</span></td>
+                        <td>6221376671</td>
+                        <td style="color: rgba(211, 47, 47, 1);">-RS 50,000</td>
+                        <td>Apr 26, 2024 </td>
+                        <td id="set">
+                            <div class="view"><img src="images/view.png" alt=""></div>
+                            <div class="edit"><img src="images/edit.png" alt=""></div>
+                            <div class="delete"><img src="images/delete.png" alt=""></div>
+
+                        </td>
+                      
+                      
+                       
+                    </tr>
+                    <tr class="second_row" id="row-third">
+                        <td style="display: flex;align-items: center;gap: 8px;"><input
+                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
+                                type="checkbox" name="" id=""><span>Copper</span></td>
+                        <td>6221376671</td>
+                      
                         <td style="color: rgba(44, 211, 72, 1);">-RS 50,000</td>
                         <td>Apr 26, 2024 </td>
                         <td id="set">
@@ -169,13 +251,25 @@
                         </td>
                     </tr>
                     <tr class="second_row" >
-                        <td style="display: flex;align-items: center;gap: 8px;"><input style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
-                            type="checkbox" name="" id=""><span>Naveed</span></td>
-                               
+                        <td style="display: flex;align-items: center;gap: 8px;"><input
+                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
+                                type="checkbox" name="" id=""><span>Copper</span></td>
                         <td>6221376671</td>
-                        <td>Travel Agent </td>
-                        <td>03001234567</td>
-                        <td>Faisalabad</td>
+                       
+                        <td style="color: rgba(44, 211, 72, 1);">-RS 50,000</td>
+                        <td>Apr 26, 2024 </td>
+                        <td id="set">
+                            <div class="view"><img src="images/view.png" alt=""></div>
+                            <div class="edit"><img src="images/edit.png" alt=""></div>
+                            <div class="delete"><img src="images/delete.png" alt=""></div>
+
+                        </td>
+                    </tr>
+                    <tr class="second_row">
+                        <td style="display: flex;align-items: center;gap: 8px;"><input
+                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
+                                type="checkbox" name="" id=""><span>Cooper</span></td>
+                        <td>6221376671</td>
                         <td style="color: rgba(211, 47, 47, 1);">-RS 50,000</td>
                         <td>Apr 26, 2024 </td>
                         <td id="set">
@@ -184,83 +278,33 @@
                             <div class="delete"><img src="images/delete.png" alt=""></div>
 
                         </td>
+                      
+                      
+                       
+                    </tr>
+                    <tr class="second_row">
+                        <td style="display: flex;align-items: center;gap: 8px;"><input
+                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
+                                type="checkbox" name="" id=""><span>Cooper</span></td>
+                        <td>6221376671</td>
+                        <td style="color: rgba(211, 47, 47, 1);">-RS 50,000</td>
+                        <td>Apr 26, 2024 </td>
+                        <td id="set">
+                            <div class="view"><img src="images/view.png" alt=""></div>
+                            <div class="edit"><img src="images/edit.png" alt=""></div>
+                            <div class="delete"><img src="images/delete.png" alt=""></div>
+
+                        </td>
+                      
+                      
+                       
                     </tr>
                     <tr class="second_row" id="row-third">
                         <td style="display: flex;align-items: center;gap: 8px;"><input
-                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
-                                type="checkbox" name="" id=""><span>Naveed</span></td>
+                           
+                                type="checkbox" name="" id=""><span>Copper</span></td>
                         <td>6221376671</td>
-                        <td>Travel Agent </td>
-                        <td>03001234567</td>
-                        <td>Faisalabad</td>
-                        <td style="color: rgba(44, 211, 72, 1);">-RS 50,000</td>
-                        <td>Apr 26, 2024 </td>
-                        <td id="set">
-                            <div class="view"><img src="images/view.png" alt=""></div>
-                            <div class="edit"><img src="images/edit.png" alt=""></div>
-                            <div class="delete"><img src="images/delete.png" alt=""></div>
-
-                        </td>
-                    </tr>
-                    <tr class="second_row">
-                        <td style="display: flex;align-items: center;gap: 8px;"><input
-                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
-                                type="checkbox" name="" id=""><span>Naveed</span></td>
-                        <td>6221376671</td>
-                        <td>Travel Agent </td>
-                        <td>03001234567</td>
-                        <td>Faisalabad</td>
-                        <td style="color: rgba(44, 211, 72, 1);">-RS 50,000</td>
-                        <td>Apr 26, 2024 </td>
-                        <td id="set">
-                            <div class="view"><img src="images/view.png" alt=""></div>
-                            <div class="edit"><img src="images/edit.png" alt=""></div>
-                            <div class="delete"><img src="images/delete.png" alt=""></div>
-
-                        </td>
-                    </tr>
-                    <tr class="second_row">
-                        <td style="display: flex;align-items: center;gap: 8px;"><input
-                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
-                                type="checkbox" name="" id=""><span>Naveed</span></td>
-                        <td>6221376671</td>
-                        <td>Travel Agent </td>
-                        <td>03001234567</td>
-                        <td>Faisalabad</td>
-                        <td style="color: rgba(211, 47, 47, 1);">-RS 50,000</td>
-                        <td>Apr 26, 2024 </td>
-                        <td id="set">
-                            <div class="view"><img src="images/view.png" alt=""></div>
-                            <div class="edit"><img src="images/edit.png" alt=""></div>
-                            <div class="delete"><img src="images/delete.png" alt=""></div>
-
-                        </td>
-                    </tr>
-                    <tr class="second_row">
-                        <td style="display: flex;align-items: center;gap: 8px;"><input
-                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
-                                type="checkbox" name="" id=""><span>Naveed</span></td>
-                        <td>6221376671</td>
-                        <td>Travel Agent </td>
-                        <td>03001234567</td>
-                        <td>Faisalabad</td>
-                        <td style="color: rgba(44, 211, 72, 1);">-RS 50,000</td>
-                        <td>Apr 26, 2024 </td>
-                        <td id="set">
-                            <div class="view"><img src="images/view.png" alt=""></div>
-                            <div class="edit"><img src="images/edit.png" alt=""></div>
-                            <div class="delete"><img src="images/delete.png" alt=""></div>
-
-                        </td>
-                    </tr>
-                    <tr class="second_row">
-                        <td style="display: flex;align-items: center;gap: 8px;"><input
-                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
-                                type="checkbox" name="" id=""><span>Naveed</span></td>
-                        <td>6221376671</td>
-                        <td>Travel Agent </td>
-                        <td>03001234567</td>
-                        <td>Faisalabad</td>
+                        
                         <td style="color: rgba(44, 211, 72, 1);">-RS 50,000</td>
                         <td>Apr 26, 2024 </td>
                         <td id="set">
@@ -273,62 +317,9 @@
                     <tr class="second_row" id="row-third">
                         <td style="display: flex;align-items: center;gap: 8px;"><input
                                 style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
-                                type="checkbox" name="" id=""><span>Naveed</span></td>
+                                type="checkbox" name="" id=""><span>Copper</span></td>
                         <td>6221376671</td>
-                        <td>Travel Agent </td>
-                        <td>03001234567</td>
-                        <td>Faisalabad</td>
-                        <td style="color: rgba(211, 47, 47, 1);">-RS 50,000</td>
-                        <td>Apr 26, 2024 </td>
-                        <td id="set">
-                            <div class="view"><img src="images/view.png" alt=""></div>
-                            <div class="edit"><img src="images/edit.png" alt=""></div>
-                            <div class="delete"><img src="images/delete.png" alt=""></div>
-
-                        </td>
-                    </tr>
-                    <tr class="second_row">
-                        <td style="display: flex;align-items: center;gap: 8px;"><input
-                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
-                                type="checkbox" name="" id=""><span>Naveed</span></td>
-                        <td>6221376671</td>
-                        <td>Travel Agent </td>
-                        <td>03001234567</td>
-                        <td>Faisalabad</td>
-                        <td style="color: rgba(211, 47, 47, 1);">-RS 50,000</td>
-                        <td>Apr 26, 2024 </td>
-                        <td id="set">
-                            <div class="view"><img src="images/view.png" alt=""></div>
-                            <div class="edit"><img src="images/edit.png" alt=""></div>
-                            <div class="delete"><img src="images/delete.png" alt=""></div>
-
-                        </td>
-                    </tr>
-                    <tr class="second_row" id="row-third">
-                        <td style="display: flex;align-items: center;gap: 8px;"><input
-                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
-                                type="checkbox" name="" id=""><span>Naveed</span></td>
-                        <td>6221376671</td>
-                        <td>Travel Agent </td>
-                        <td>03001234567</td>
-                        <td>Faisalabad</td>
-                        <td style="color: rgba(44, 211, 72, 1);">-RS 50,000</td>
-                        <td>Apr 26, 2024 </td>
-                        <td id="set">
-                            <div class="view"><img src="images/view.png" alt=""></div>
-                            <div class="edit"><img src="images/edit.png" alt=""></div>
-                            <div class="delete"><img src="images/delete.png" alt=""></div>
-
-                        </td>
-                    </tr>
-                    <tr class="second_row" id="row-third">
-                        <td style="display: flex;align-items: center;gap: 8px;"><input
-                                style="width: 18px;border-radius: 2px;border: 1px solid rgba(189, 189, 189, 1)"
-                                type="checkbox" name="" id=""><span>Naveed</span></td>
-                        <td>6221376671</td>
-                        <td>Travel Agent </td>
-                        <td>03001234567</td>
-                        <td>Faisalabad</td>
+                       
                         <td style="color: rgba(44, 211, 72, 1);">-RS 50,000</td>
                         <td>Apr 26, 2024 </td>
                         <td id="set">
