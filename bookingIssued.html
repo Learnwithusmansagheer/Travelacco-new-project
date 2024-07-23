@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="add-airline.css">
-    <title>Add Airlines</title>
+    <link rel="stylesheet" href="./bookinIssued.css">
+    <title>Add Booking</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="dashboard">
                         <img src="images/booking.png" alt="">
-                        <a href="#">Bookings</a>
+                        <a href="./booking.html">Bookings</a>
                     </div>
                     <div class="dashboard">
                         <img src="images/transcition.png" alt="">
@@ -40,7 +40,7 @@
                     </div>
                     <div class="dashboard">
                         <img src="images/airlines.png" alt="">
-                        <a href="./airlines.html">Airlines</a>
+                        <a href="#">Airlines</a>
                     </div>
                     <div class="dashboard">
                         <img src="images/banks.png" alt="">
@@ -62,9 +62,19 @@
                         <img src="images/packages.png" alt="">
                         <a href="./package.html">Packages</a>
                     </div>
-                    <div class="dashboard">
-                        <img src="images/setting.png" alt="">
-                        <a href="#">Settings</a>
+                    <div style="display: flex;" class="dashboard" id="dashboard">
+                        <div style="display: flex;align-items: center;gap: 5px;" class="dashboard_set">
+                            <img src="images/setting.png" alt="">
+                            <a href="#">Settings</a>
+                        </div>
+                        <select style="border: none;" name="" id="">
+                            <option value="1">222</option>
+                            <option value="1">222</option>
+                            <option value="1">222</option>
+                            <option value="1">222</option>
+                            <option value="1">222</option>
+                        </select>
+
                     </div>
 
                 </div>
@@ -82,72 +92,94 @@
                 </div>
     </section>
 
-
     <section>
         <div class="navbar">
-            <h1>Airlines > Add</h1>
+            <h1>Booking > Issued</h1>
             <img src="images/billicon.png" alt="">
         </div>
         <div class="packageSetting">
             <div class="add_airlines">
                 <div class="add-header">
-                    <h1>Add New Airlines Here</h1>
+                    <h1>Add New Booking Here</h1>
                 </div>
                 <div class="input-setting">
                     <div class="input1">
                         <div class="subInput">
-                            <label for="text">Name <span>*</span></label><br>
+                            <label for="text">PAX Name <span>*</span></label><br>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="subInput">
+                            <label for="text">PNR Number<span>*</span></label><br>
+                            <input type="text" placeholder="x225s">
+                        </div>
+                    </div>
+                    <div class="input1">
+                        <div class="subInput">
+                            <label for="text">Status <span>*</span></label><br>
                             <select name="" id="city">
-                                <option value="1">Add Or Select Airline Here</option>
+                                <option value="1">yes</option>
                                 <option value="2">karachi</option>
                                 <option value="3">Faisalabad</option>
                             </select>
                         </div>
                         <div class="subInput">
-                            <label for="text">Digital Code<span>*</span></label><br>
-                            <input type="text" placeholder="Write Digital Code Here">
-                        </div>
-                    </div>
-                    <div class="input1">
-                        <div class="subInput">
-                            <label for="text">Character Code <span>*</span></label><br>
-                            <input type="text" placeholder="Write Character Code Here">
-                        </div>
-                        <div class="subInput">
-                            <label for="text">Address<span>*</span></label><br>
-                            <input type="text" placeholder="Address">
-                        </div>
-                    </div>
-                    <div class="input1">
-                        <div class="subInput">
-                            <label for="text">Balance<span>*</span></label><br>
+                            <label for="text">Airline<span>*</span></label><br>
                             <select name="" id="city">
-                                <option value="1">Enter amount here</option>
+                                <option value="1">lahore</option>
                                 <option value="2">karachi</option>
                                 <option value="3">Faisalabad</option>
                             </select>
                         </div>
-                            <div class="subInput">
-                                <label for="text">Incentive Status<span>*</span></label><br>
-                                <select name="" id="city">
-                                    <option value="1">NO</option>
-                                    <option value="2">karachi</option>
-                                    <option value="3">Faisalabad</option>
-                                </select>
-                          
+                    </div>
+                    <div class="input1">
+                        <div class="subInput">
+                            <label for="text">Sector<span>*</span></label><br>
+                            <input type="text" placeholder="DHK - KOL - LHR">
+                        </div>
+                        <div class="subInput">
+                            <label for="text">Customer Ticket Price<span>*</span></label><br>
+                            <input type="text" placeholder="RS 750000 ">
                         </div>
 
+
                     </div>
-                    
-                    
+                    <div class="input1">
+                        <div class="subInput">
+                            <label for="text">Basic fare<span>*</span></label><br>
+                            <input type="text" placeholder="RS 750000 ">
+                        </div>
+                        <div class="subInput">
+                            <label for="text">Tax Amount<span>*</span></label><br>
+                            <input type="text" placeholder="RS 180000">
+
+                        </div>
+
+
+                    </div>
+                    <div class="input1">
+                        <div class="subInput">
+                            <label for="text">Departure Date and Time<span>*</span></label><br>
+                            <input type="datetime-local" >
+
+                        </div>
+                        <div class="subInput">
+                            <label for="text">Remarks<span>*</span></label><br>
+                            <input type="text" placeholder="Remarks ">
+                        </div>
+                       
+
+
+                    </div>
+
+<!-- 
                     <div class="input2">
                         <label for="text">Contact Person Name<span>*</span></label><br>
-                            <input type="text" placeholder="Contact Person Name">
-                    </div>
+                        <input type="text" placeholder="Contact Person Name">
+                    </div> -->
                     <div class="button-footer">
-                        <button><a href="./airline-incentives.html">
-                            ADD
-                        </a></button>
+                        <button><a href="./bookingEdit .html">
+                                ADD
+                            </a></button>
                     </div>
                 </div>
             </div>

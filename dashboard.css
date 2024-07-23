@@ -201,7 +201,7 @@ body {
 
     }
 
-    .dashboard p {
+    .dashboard a {
         display: none;
     }
 
@@ -257,7 +257,7 @@ body {
 
     }
 
-    .dashboard p {
+    .dashboard a {
         display: none;
     }
 
@@ -279,61 +279,6 @@ body {
 
 
 
-/* @media screen and (max-width:390px) {
-
-
-    .sideBar {
-        align-items: center;
-        width: 80px;
-        height: 100%;
-        position: fixed;
-    }
-
-    .sideBar-head h1 {
-        display: none;
-    }
-
-    .head-img {
-        width: 30px;
-        height: 20px;
-
-    }
-
-    .sideBar-list {
-        width: auto;
-        height: 500px;
-        align-items: center;
-
-        padding: 10px 0px 0px px;
-
-    }
-
-    .dashboard {
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-
-
-    }
-
-    .dashboard p {
-        display: none;
-    }
-
-    .side-footer {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    .footer-text {
-        display: none;
-    }
-
-    .upload {
-        display: none;
-    }
-} */
 
 .navbar {
     width: 85%;
@@ -386,7 +331,7 @@ body {
 
 @media screen and (max-width:360px) {
     .navbar {
-        width: 100%;
+        width: 120%;
         height: auto;
         padding: 0 15px 0 15px;
         margin-left: 65px;
@@ -416,9 +361,9 @@ body {
 
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:400px) {
     .dashboard-set {
-        margin-left:20px;
+        margin-left:90px;
     }
 
 }
@@ -438,8 +383,11 @@ body {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 36px;
+    grid-template-rows: repeat(1,1fr);
+    gap: 16px;
     align-content: center;
+   height: auto;
+   align-items: stretch;
 
 
 }
@@ -600,8 +548,8 @@ body {
 /* here we setting the shedular */
 .schedular {
     width: 498px;
-    height: 330.24px;
-    padding: 12px 16px 12px 16px;
+    height: 350.24px;
+    padding: 15px 16px 30px 16px;
     gap: 24px;
     border-radius: 12px;
     opacity: 0px;
@@ -632,6 +580,7 @@ body {
 
 .table {
     width: 100%;
+    height: auto;
 }
 
 .table tr td {
@@ -804,30 +753,28 @@ body {
 
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:400px) {
 
     .container {
 
         grid-template-columns: auto;
         align-items: center;
-        margin-left: 60px;
-     
 
     }
-.overView{
-    width: 70%;
-}
-    
 
+    
+.overView{
+    width: 80%;
+}
     .schedular {
-width: 70%;
+width: 80%;
         overflow: auto;
+
 
     }
 
     .card {
         grid-template-columns: auto;
-
         gap: 5px;
     }
 
@@ -837,6 +784,7 @@ width: 70%;
     .clients {
         width: auto;
     }
+
 }
 
 
@@ -1294,20 +1242,20 @@ overflow: auto;
         gap: 2px;
     }
 }
-@media screen and (max-width:360px) {
+@media screen and (max-width:400px) {
     .container1 {
         grid-template-columns: auto;
-        margin-left: 60px;
+        margin-left: px;
     }
 
     .booking {
-        width: 70%;
+        width: 80%;
        overflow: auto;
     }
 
 
     .Expenditure {
-        width: 70%;
+        width: 80%;
        overflow: auto;
     }
     .line-y{
@@ -1464,6 +1412,7 @@ overflow: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 
@@ -1489,6 +1438,7 @@ overflow: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .earn-info h2 {
@@ -1499,6 +1449,7 @@ overflow: auto;
     letter-spacing: 0.0168em;
     text-align: center;
     color: rgba(255, 255, 255, 1);
+    flex-wrap: wrap;
 }
 
 .earn-info p {
@@ -1571,7 +1522,7 @@ overflow: auto;
     }
 }
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:400px) {
     .group1 {
         grid-template-columns: auto;
         width: auto;
@@ -1579,6 +1530,14 @@ overflow: auto;
 
     .expences {
       width: auto;
+      overflow-y: auto;
+    }
+    .earning-card{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .earn-info p {
+        font-size: 10px;
     }
 }
 @media screen and (max-width:360px) {

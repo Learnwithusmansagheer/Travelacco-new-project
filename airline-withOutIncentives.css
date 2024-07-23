@@ -287,6 +287,7 @@ body {
 
 }
 
+
 .navbar {
     width: 85%;
 
@@ -618,7 +619,7 @@ body {
         margin-left: 80px;
     }  
     .add-header h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
 }

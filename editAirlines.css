@@ -287,6 +287,9 @@ body {
 
 }
 
+
+
+
 .navbar {
     width: 85%;
 
@@ -479,8 +482,6 @@ body {
     color: rgba(191, 191, 191, 1);
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(183, 183, 183, 1)
-
-
 }
 
 .subInput input {
@@ -532,11 +533,17 @@ body {
     border: 1px solid rgba(183, 183, 183, 1)
 }
 
-.button-footer {
+.button-footer {width: 100%;
+    background-color: black;
+    display: flex;
     padding: 0 0 0 24px;
+    flex-direction: column;
 }
 
 .button-footer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     width: 120px;
     height: 48px;
@@ -552,9 +559,36 @@ body {
     font-weight: 400;
     line-height: 20px;
     text-align: center;
-   color: rgba(255, 255, 255, 1); 
-   
+    color: rgba(255, 255, 255, 1);
 
+
+}
+
+#back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    padding: 14px 16px 14px 10px;
+    gap: 4px;
+    border-radius: 6px;
+    border: 1px;
+    opacity: 0px;
+    background: rgba(96, 91, 255, 1);
+    border: 1px solid rgba(96, 91, 255, 1);
+    font-family: lato;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+#back .bx-left-arrow-alt {
+    font-size: 20px;
 }
 
 @media screen and (max-width:1024px) {
@@ -583,7 +617,7 @@ body {
         margin-left: 190px;
     }
 
-    
+
 
 
 }
@@ -594,10 +628,10 @@ body {
         margin-left: 180px;
     }
 
-   .input1{
-    grid-template-columns: repeat(1,1fr);
-    height: auto;
-   }
+    .input1 {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+    }
 
 
 }
@@ -607,8 +641,13 @@ body {
 
         margin-left: 90px;
     }
-
-   
+    #back {
+       width: 90px;
+       margin-left: 130px; 
+    }
+    .add-header h1 {
+        font-size: 15px;
+    }
 
 }
 
@@ -616,9 +655,13 @@ body {
     .packageSetting {
 
         margin-left: 80px;
-    }  
+    }
+    .button-footer button {
+        width: 100px;
+    }
+
     .add-header h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
 }
