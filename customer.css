@@ -104,7 +104,7 @@ body {
 
 }
 
-.dashboard p {
+.dashboard a {
     font-family: lato;
     font-size: 20px;
     font-weight: 400;
@@ -207,7 +207,7 @@ body {
 
     }
 
-    .dashboard p {
+    .dashboard a {
         display: none;
     }
 
@@ -263,7 +263,7 @@ body {
 
     }
 
-    .dashboard p {
+    .dashboard a {
         display: none;
     }
 
